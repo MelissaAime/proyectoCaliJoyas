@@ -1,0 +1,68 @@
+/*NAVBAR*/
+
+.navbar{
+    background-color: #5197cce5;
+    position: sticky;
+}
+.imgNavBar{
+    border-radius: 150px;
+    width: 90px; 
+    height: 90px;
+}
+
+a{
+    font-family: $tipografiaTres;
+    font-size: 125%;
+    list-style-type: none;
+}
+
+.dropdown-menu{
+    background-color: $colorEncab;
+}
+.dropdown-item{
+    color: $colorTextoNav;
+}
+#dropdownColor{
+    background-color: $colorEncab;
+}
+#dropItemColor{
+    color: $colorTextoNav;
+}
+
+
+
+/*ID navbar*/
+/*Seccion inicio*/
+#colorInicioP{color: $colorTextoNav;}
+#colorProdP{color: $colorTextoNav;}
+#colorInfoP{color: $colorTextoNav;}
+#colorNosotP{color: $colorTextoNav;}
+#colorContP{color: $colorTextoNav;}
+
+/*Seccion productos*/
+#colorInicioPr{color: $colorTextoNav;}
+#colorProdPr{color: $colorTextoNav;}
+#colorInfoPr{color: $colorTextoNav;}
+#colorNosotPr{color: $colorTextoNav;}
+#colorContPr{color: $colorTextoNav;}
+
+/*Seccion información*/
+#colorInicioI{color: $colorTextoNav;}
+#colorProdI{color: $colorTextoNav;}
+#colorInfoI{color: $colorTextoNav;}
+#colorNosotI{color: $colorTextoNav;}
+#colorContI{color: $colorTextoNav;}
+
+/*Seccion Nosotros*/
+#colorInicioN{color: $colorTextoNav;}
+#colorProdN{color: $colorTextoNav;}
+#colorInfoN{color: $colorTextoNav;}
+#colorNosotN{color: $colorTextoNav;}
+#colorContN{color: $colorTextoNav;}
+
+/*Seccion Contacto*/
+#colorInicioC{color: $colorTextoNav;}
+#colorProdC{color: $colorTextoNav;}
+#colorInfoC{color: $colorTextoNav;}
+#colorNosotC{color: $colorTextoNav;}
+#colorContC{color: $colorTextoNav;}

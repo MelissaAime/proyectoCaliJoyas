@@ -1,0 +1,33 @@
+
+
+//Imagen página principal
+#imgPrincipal {
+    width: $imgPrincipalW;
+    height: $imgPrincipalH;
+    grid-area: imagen;
+    justify-self: center;
+    align-self: start;
+    margin-right: 20px;
+}
+#imgPrincipal:hover{
+    width: $imgPrincipalW + 10px;
+    height: $imgPrincipalH + 10px;
+}
+
+
+
+//Imagen seccion nosotros
+.imgNosotros{
+    height: $imgNosotrosH;
+    width: 90%;
+    align-self: start;
+    justify-self: center;
+    grid-area: imgN1;
+}
+.imgNosotrosDos{ 
+    height: $imgNosotrosH;
+    width: 90%;  
+    align-self: start;
+    justify-self: center;
+    grid-area: imgN3;
+}

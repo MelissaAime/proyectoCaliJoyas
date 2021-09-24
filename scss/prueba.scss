@@ -1,0 +1,343 @@
+//Reseteo inicial
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+//Import Archivo de variables
+@import "variables";
+
+//Navbar
+@import "navbar";
+
+//Imagenes
+@import "imagenes";
+
+.imgHeader{
+    height: 100px;
+    background-image: url(../Multimedia/collagefotos.png);
+    background-size: cover;
+    background-position: center ;
+}
+
+//Mixin estilos de titulos
+@mixin tituloH ($colorTitulos , $tamanioTexto , $tipografiaUno ) {
+    color: $colorTitulos;
+    font-size: $tamanioTexto;
+    font-family: $tipografiaUno;
+    font-weight: 900;
+    text-align: center;
+    word-spacing: 10px;
+    align-self: center;
+}
+
+body{
+    max-width: 100%;
+}
+//Main
+main{
+    background-color: $colorFondo;
+    max-width: 100%; 
+}
+
+//GRID Main principal
+.gridMainPrincipal{
+    height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "titulo    titulo"
+                         "texto     imagen";
+    column-gap: 20px;
+}
+
+//H1 Titulo principal
+.titulo{
+    @include tituloH($colorTitulos , $tamanioTexto , $tipografiaUno );
+    grid-area: titulo;
+    margin-top: 25px;  
+}
+.titulo:hover{
+    font-size: $tamanioTexto + 2;
+}
+
+
+h3{
+    @include tituloH($colorTitulos, $tamanioTextoDos , $tipografiaTres )
+}
+
+.gridDos{
+    height: 450px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: "instag   title"
+                         "instag   carrou";
+    column-gap: 20px;
+    justify-items: center;
+
+    .gridDos__titulo{
+        grid-area: title;
+    }
+
+    .gridDos__carrousel{
+        grid-area: carrou;
+        height: auto;
+        width: 250px;
+    }
+
+    .gridDos__iframe{
+        grid-area: instag;
+    }
+
+    
+
+}
+
+
+//Titulo de las otras secciones
+h2{
+    @include tituloH($colorTitulos , $tamanioTexto , $tipografiaUno );
+    padding-top: 2rem;
+}
+h2:hover{
+    font-size: $tamanioTexto + 2;
+}
+
+//Parrafos en general
+p {
+    color: $colorParrafoDos;
+    font-size: $tamanioParrafo;
+    font-family: $tipografiaTres;
+    text-align: justify;
+}
+
+//Texto inicial
+#textoInicial{
+    color: $colorParrafo;
+    font-size: $tamanioParrafoInicial;
+    font-family: $tipografiaDos;
+    grid-area: texto;
+    align-self: start;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+//Grid Productos
+.product{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "img1 img2 img3 img4"
+                             "img5 img6 img7 img8";
+         justify-items: center;
+    
+
+    .product__img--uno{grid-area:img1; width: 60%;}
+    .product__img--dos{grid-area:img2; width: 60%;}
+    .product__img--tres{grid-area:img3; width: 60%;}
+    .product__img--cuatro{grid-area:img4; width: 60%;}
+    .product__img--cinco{grid-area:img5; width: 80%}
+    .product__img--seis{grid-area:img6; width: 60%;}
+    .product__img--siete{grid-area:img7; width: 80%}
+    .product__img--ocho{grid-area:img8; width: 60%;}
+}
+
+.productdos{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+        grid-template-areas: "img1 img2 img3 img4";
+        justify-items: center;
+
+    .productdos__img--uno{grid-area:img1; width: 80%}
+    .productdos__img--dos{grid-area:img2; width: 80%}
+    .productdos__img--tres{grid-area:img3; width: 80%}
+    .productdos__img--cuatro{grid-area:img4;}
+}
+
+.producttres{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+        grid-template-areas: "img1 img2 img3 img4";
+        justify-items: center;
+    
+    .producttres__img--uno{grid-area:img1; width: 60%}
+    .producttres__img--dos{grid-area:img2; width: 60%}
+    .producttres__img--tres{grid-area:img3; width: 80%}
+    .producttres__img--cuatro{grid-area:img4; width: 60%}
+    
+}
+
+//Botones de la sección productos y en general
+.navbar-toggler{
+    height:auto;
+}
+button{
+    background: rgb(192,104,246);
+    background: radial-gradient(circle, rgba(192,104,246,1) 19%, rgba(98,158,228,1) 100%);
+    color:white;
+    font-family: $tipografiaDos;
+    font-size: 30px;
+    width:auto;
+    height:50px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+button:hover{
+    background: rgb(192,104,246);
+    background: radial-gradient(circle, rgba(98,158,228,1) 19%, rgba(192,104,246,1) 100%);
+}
+
+.botonE{
+    @extend button;
+    width: 150px;
+}
+
+//Seccion PRODUCTOS
+.tiposProd{
+    color: $colorParrafoDos;
+    font-size: $tamanioProd;
+    font-family: $tipografiaDos;
+    padding: 5px;
+    font-weight: bold;
+}
+#divProd {
+    text-align: center;
+    margin-bottom: 0px;
+}
+#ulProd{
+    padding-bottom: 70px;
+    margin-bottom: 0px;
+}
+
+
+
+//INFORMACIÓN
+//Cartas
+.card{margin-left: 6%; margin-right: 6%;}
+.row{padding-bottom: 3rem;}
+
+
+//CONTACTO
+
+//Estilo al recuadro
+.fieldsetContacto{
+    border: 4px solid white;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    padding-bottom: 30px;
+}
+.mb-3{
+    font-size: 2rem;
+    color: $colorParrafoDos;
+}
+.form-label{
+    font-size: 2rem;
+    color: $colorParrafoDos;
+}
+.contFlex{
+    display: flex;
+    flex-direction: row;
+}
+.contFlexDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.botonPersonalizado{
+    @extend button;
+    font-size: 20px;
+    height: 40px;
+}
+
+.input-group-text{
+    background-color: $colorEncab;
+    color: white;
+}
+
+//NOSOTROS
+
+//Para la seccion Nosotros
+#divNosotros{
+    height: 600px;
+    padding-bottom: 35px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imgN1 txtN2 imgN3";
+}
+
+#textoNosotros{
+    color: $colorParrafo;
+    font-size: $tamanioTextoNosotros;
+    font-family: $tipografiaDos;
+    text-align: justify;
+    margin: 15px;
+    grid-area: txtN2;
+}
+
+
+//Footer
+
+.form-label{
+    font-family: $tipografiaDos ;
+}
+
+.piedepagina{
+    display:flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+    color: $colorFondo;
+}
+a:hover{
+    color: white;
+}
+.carta{
+    margin-left: 0;
+    margin-right: 0;
+    border: 2% solid white;
+    border-radius: 0%;
+    width: 33.33333%;
+    
+    .carta-header{
+        background-color: darken($colorEncab, 15%);
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $colorFondo;
+        font-size: 1rem;
+        height: 2rem;
+    }
+
+    .carta-body{
+        background-color: $colorEncab;
+        height: 8rem;
+    }
+    
+    .carta-title{
+        font-size: 1rem;
+    }
+}
+.carta-header:hover{
+    color: white;
+}
+
+
+//Media querie
+@import "mediaquery";
+
+

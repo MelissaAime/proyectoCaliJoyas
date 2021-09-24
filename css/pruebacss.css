@@ -1,0 +1,537 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*NAVBAR*/
+.navbar {
+  background-color: #5197cce5;
+  position: sticky; }
+
+.imgNavBar {
+  border-radius: 150px;
+  width: 90px;
+  height: 90px; }
+
+a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 125%;
+  list-style-type: none; }
+
+.dropdown-menu {
+  background-color: #5197cc; }
+
+.dropdown-item {
+  color: #f2ccff; }
+
+#dropdownColor {
+  background-color: #5197cc; }
+
+#dropItemColor {
+  color: #f2ccff; }
+
+/*ID navbar*/
+/*Seccion inicio*/
+#colorInicioP {
+  color: #f2ccff; }
+
+#colorProdP {
+  color: #f2ccff; }
+
+#colorInfoP {
+  color: #f2ccff; }
+
+#colorNosotP {
+  color: #f2ccff; }
+
+#colorContP {
+  color: #f2ccff; }
+
+/*Seccion productos*/
+#colorInicioPr {
+  color: #f2ccff; }
+
+#colorProdPr {
+  color: #f2ccff; }
+
+#colorInfoPr {
+  color: #f2ccff; }
+
+#colorNosotPr {
+  color: #f2ccff; }
+
+#colorContPr {
+  color: #f2ccff; }
+
+/*Seccion información*/
+#colorInicioI {
+  color: #f2ccff; }
+
+#colorProdI {
+  color: #f2ccff; }
+
+#colorInfoI {
+  color: #f2ccff; }
+
+#colorNosotI {
+  color: #f2ccff; }
+
+#colorContI {
+  color: #f2ccff; }
+
+/*Seccion Nosotros*/
+#colorInicioN {
+  color: #f2ccff; }
+
+#colorProdN {
+  color: #f2ccff; }
+
+#colorInfoN {
+  color: #f2ccff; }
+
+#colorNosotN {
+  color: #f2ccff; }
+
+#colorContN {
+  color: #f2ccff; }
+
+/*Seccion Contacto*/
+#colorInicioC {
+  color: #f2ccff; }
+
+#colorProdC {
+  color: #f2ccff; }
+
+#colorInfoC {
+  color: #f2ccff; }
+
+#colorNosotC {
+  color: #f2ccff; }
+
+#colorContC {
+  color: #f2ccff; }
+
+#imgPrincipal {
+  width: 350px;
+  height: 350px;
+  grid-area: imagen;
+  justify-self: center;
+  align-self: start;
+  margin-right: 20px; }
+
+#imgPrincipal:hover {
+  width: 360px;
+  height: 360px; }
+
+.imgNosotros {
+  height: 350px;
+  width: 90%;
+  align-self: start;
+  justify-self: center;
+  grid-area: imgN1; }
+
+.imgNosotrosDos {
+  height: 350px;
+  width: 90%;
+  align-self: start;
+  justify-self: center;
+  grid-area: imgN3; }
+
+.imgHeader {
+  height: 100px;
+  background-image: url(../Multimedia/collagefotos.png);
+  background-size: cover;
+  background-position: center; }
+
+body {
+  max-width: 100%; }
+
+main {
+  background-color: #f2ccff;
+  max-width: 100%; }
+
+.gridMainPrincipal {
+  height: 560px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: "titulo    titulo" "texto     imagen";
+  column-gap: 20px; }
+
+.titulo {
+  color: #a775b7;
+  font-size: 48px;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 900;
+  text-align: center;
+  word-spacing: 10px;
+  align-self: center;
+  grid-area: titulo;
+  margin-top: 25px; }
+
+.titulo:hover {
+  font-size: 50px; }
+
+h3 {
+  color: #a775b7;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  word-spacing: 10px;
+  align-self: center; }
+
+.gridDos {
+  height: 450px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas: "instag   title" "instag   carrou";
+  column-gap: 20px;
+  justify-items: center; }
+  .gridDos .gridDos__titulo {
+    grid-area: title; }
+  .gridDos .gridDos__carrousel {
+    grid-area: carrou;
+    height: auto;
+    width: 250px; }
+  .gridDos .gridDos__iframe {
+    grid-area: instag; }
+
+h2 {
+  color: #a775b7;
+  font-size: 48px;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 900;
+  text-align: center;
+  word-spacing: 10px;
+  align-self: center;
+  padding-top: 2rem; }
+
+h2:hover {
+  font-size: 50px; }
+
+p {
+  color: #540197;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify; }
+
+#textoInicial {
+  color: #0049e7;
+  font-size: 29px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  grid-area: texto;
+  align-self: start;
+  margin-left: 25px;
+  margin-top: 25px; }
+
+.product {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8";
+  justify-items: center; }
+  .product .product__img--uno {
+    grid-area: img1;
+    width: 60%; }
+  .product .product__img--dos {
+    grid-area: img2;
+    width: 60%; }
+  .product .product__img--tres {
+    grid-area: img3;
+    width: 60%; }
+  .product .product__img--cuatro {
+    grid-area: img4;
+    width: 60%; }
+  .product .product__img--cinco {
+    grid-area: img5;
+    width: 80%; }
+  .product .product__img--seis {
+    grid-area: img6;
+    width: 60%; }
+  .product .product__img--siete {
+    grid-area: img7;
+    width: 80%; }
+  .product .product__img--ocho {
+    grid-area: img8;
+    width: 60%; }
+
+.productdos {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: "img1 img2 img3 img4";
+  justify-items: center; }
+  .productdos .productdos__img--uno {
+    grid-area: img1;
+    width: 80%; }
+  .productdos .productdos__img--dos {
+    grid-area: img2;
+    width: 80%; }
+  .productdos .productdos__img--tres {
+    grid-area: img3;
+    width: 80%; }
+  .productdos .productdos__img--cuatro {
+    grid-area: img4; }
+
+.producttres {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: "img1 img2 img3 img4";
+  justify-items: center; }
+  .producttres .producttres__img--uno {
+    grid-area: img1;
+    width: 60%; }
+  .producttres .producttres__img--dos {
+    grid-area: img2;
+    width: 60%; }
+  .producttres .producttres__img--tres {
+    grid-area: img3;
+    width: 80%; }
+  .producttres .producttres__img--cuatro {
+    grid-area: img4;
+    width: 60%; }
+
+.navbar-toggler {
+  height: auto; }
+
+button, .botonE, .botonPersonalizado {
+  background: #c068f6;
+  background: radial-gradient(circle, #c068f6 19%, #629ee4 100%);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  width: auto;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 15px; }
+
+button:hover, .botonE:hover, .botonPersonalizado:hover {
+  background: #c068f6;
+  background: radial-gradient(circle, #629ee4 19%, #c068f6 100%); }
+
+.botonE {
+  width: 150px; }
+
+.tiposProd {
+  color: #540197;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 5px;
+  font-weight: bold; }
+
+#divProd {
+  text-align: center;
+  margin-bottom: 0px; }
+
+#ulProd {
+  padding-bottom: 70px;
+  margin-bottom: 0px; }
+
+.card {
+  margin-left: 6%;
+  margin-right: 6%; }
+
+.row {
+  padding-bottom: 3rem; }
+
+.fieldsetContacto {
+  border: 4px solid white;
+  width: 60%;
+  margin: 0 20% 0 20%;
+  padding: 1.5%;
+  display: flex;
+  flex-direction: column; }
+
+form {
+  padding-bottom: 30px; }
+
+.mb-3 {
+  font-size: 2rem;
+  color: #540197; }
+
+.form-label {
+  font-size: 2rem;
+  color: #540197; }
+
+.contFlex {
+  display: flex;
+  flex-direction: row; }
+
+.contFlexDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.botonPersonalizado {
+  font-size: 20px;
+  height: 40px; }
+
+.input-group-text {
+  background-color: #5197cc;
+  color: white; }
+
+#divNosotros {
+  height: 600px;
+  padding-bottom: 35px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  grid-template-areas: "imgN1 txtN2 imgN3"; }
+
+#textoNosotros {
+  color: #0049e7;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+  margin: 15px;
+  grid-area: txtN2; }
+
+.form-label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+
+.piedepagina {
+  display: flex;
+  flex-direction: row; }
+
+a {
+  text-decoration: none;
+  color: #f2ccff; }
+
+a:hover {
+  color: white; }
+
+.carta {
+  margin-left: 0;
+  margin-right: 0;
+  border: 2% solid white;
+  border-radius: 0%;
+  width: 33.33333%; }
+  .carta .carta-header {
+    background-color: #2f70a1;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f2ccff;
+    font-size: 1rem;
+    height: 2rem; }
+  .carta .carta-body {
+    background-color: #5197cc;
+    height: 8rem; }
+  .carta .carta-title {
+    font-size: 1rem; }
+
+.carta-header:hover {
+  color: white; }
+
+@media only screen and (max-width: 600px) {
+  .imgHeader {
+    height: 60px; }
+  /*navbar*/
+  .imgNavBar {
+    border-radius: 150px;
+    width: 70px;
+    height: 70px; }
+  a {
+    font-size: 95%; }
+  .botonE {
+    width: auto;
+    font-size: 20px; }
+  /*En la sección principal*/
+  .gridMainPrincipal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 22% 63%;
+    grid-template-areas: "titulo" "texto"      "imagen";
+    column-gap: 10px; }
+  .titulo {
+    font-size: 28px; }
+  .titulo:hover {
+    font-size: 30px; }
+  #textoInicial {
+    font-size: 16px;
+    margin: 0 20px; }
+  #imgPrincipal {
+    margin-right: 0px;
+    padding-bottom: 20px;
+    width: 325px;
+    height: 335px; }
+  .gridDos {
+    height: 850px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 45% 50%;
+    grid-template-areas: "title" "carrou"   "instag";
+    row-gap: 0px;
+    justify-items: center;
+    align-content: center; }
+  h3 {
+    font-size: 23px; }
+  h2 {
+    font-size: 28px; }
+  #divNosotros {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "txtN2   txtN2"  "imgN1   imgN3"; }
+  .imgNosotros {
+    height: 70%;
+    width: 80%;
+    justify-self: center;
+    align-self: center; }
+  .imgNosotrosDos {
+    height: 70%;
+    width: 80%;
+    justify-self: center;
+    align-self: center; }
+  #textoNosotros {
+    font-size: 15px;
+    margin: 20px 30px; }
+  .contFlex {
+    display: inline-block;
+    flex-direction: row; }
+  .fieldsetContacto {
+    width: 80%;
+    margin: 0 10% 0 10%; }
+  .botonPersonalizado {
+    font-size: 14px;
+    width: auto;
+    height: 25px; }
+  .product {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+    justify-items: center; }
+  .productdos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img1 img2" "img3 img4";
+    justify-items: center; }
+  .producttres {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img1 img2" "img3 img4";
+    justify-items: center; }
+  .piedepagina {
+    height: 80px; }
+  .carta {
+    height: 80px; }
+    .carta .carta-header {
+      font-size: 10px; }
+    .carta .carta-body_img {
+      height: 24px; }
+    .carta .carta-title {
+      font-size: 10px; }
+    .carta .carta-body {
+      height: 5rem; }
+  .btn {
+    font-size: 8px; } }

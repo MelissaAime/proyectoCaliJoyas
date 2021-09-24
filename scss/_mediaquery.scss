@@ -1,0 +1,169 @@
+
+@import "variables";
+
+//Media
+
+@media only screen and (max-width: 600px) {
+
+   .imgHeader{
+      height: 60px;
+   }
+    /*navbar*/
+    .imgNavBar{
+       border-radius: 150px;
+       width: 70px; 
+       height: 70px;
+    }
+
+    a{
+       font-size: 95%;
+    }
+
+    .botonE{
+        width: auto;
+        font-size: 20px;
+    }
+
+   /*En la sección principal*/
+    .gridMainPrincipal{
+       display: grid;
+       grid-template-columns: 100%;
+       grid-template-rows: 15% 22% 63%;
+       grid-template-areas: "titulo"
+                            "texto"     
+                            "imagen";
+       column-gap: 10px;
+    }
+    .titulo{
+       font-size: $tamanioTextoMedia;
+    }
+    .titulo:hover{
+       font-size: $tamanioTextoMedia + 2px;
+    }
+     #textoInicial{
+       font-size: 16px;
+       margin: 0 20px;
+    }
+    #imgPrincipal {
+       margin-right: 0px;
+       padding-bottom: 20px;
+       width: $imgPrincipalW - 25px;
+      height: $imgPrincipalH - 15px;
+    }
+    .gridDos{
+      height: 850px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 5% 45% 50%;
+      grid-template-areas: "title"
+                           "carrou"  
+                           "instag";
+      row-gap: 0px;
+      justify-items: center;
+      align-content: center;
+   }
+
+    h3{
+      font-size: $tamanioTextoMedia - 5px;
+    }
+    h2{
+        font-size: $tamanioTextoMedia;
+    }
+
+    //Nosotros
+    #divNosotros{
+       padding-bottom: 15px;
+       padding-top: 10px;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 40% 60%;
+       grid-template-areas: "txtN2   txtN2" 
+                            "imgN1   imgN3";
+    }
+    .imgNosotros{
+       height: 70%;
+       width: 80%;
+       justify-self: center;
+       align-self: center;
+    }
+    .imgNosotrosDos{ 
+       height: 70%;
+       width: 80%;  
+       justify-self: center;
+       align-self: center;
+    }
+    #textoNosotros{
+       font-size: 15px;
+       margin: 20px 30px;
+    }
+
+   //CONTACTO
+    .contFlex{
+       display: inline-block;
+       flex-direction: row;
+    }
+    .fieldsetContacto{
+       width: 80%;
+       margin: 0 10% 0 10%;
+    }
+
+    .botonPersonalizado{
+      font-size: 14px;
+      width:auto;
+      height:25px;
+    }
+   
+    //productos
+    .product{
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 25% 25% 25% 25%;
+       grid-template-areas: "img1 img2"
+                           "img3 img4"
+                           "img5 img6"
+                           "img7 img8";
+       justify-items: center;
+    }
+    .productdos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "img1 img2"
+                            "img3 img4";
+        justify-items: center;
+    }
+
+    .producttres{
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 50% 50%;
+       grid-template-areas: "img1 img2"
+                            "img3 img4";
+       justify-items: center;
+    }
+
+   //Footer
+   .piedepagina{
+      height: 80px;
+   }
+
+   .carta{
+      height: 80px;
+      
+      .carta-header{
+          font-size: 10px;
+      }
+      .carta-body_img{
+         height: 24px;
+      }
+      .carta-title{
+          font-size: 10px;
+      }
+      .carta-body{
+         height: 5rem;
+      }
+   }
+   .btn{
+       font-size: 8px;
+   }
+}
