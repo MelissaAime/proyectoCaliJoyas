@@ -445,7 +445,7 @@ a:hover {
   .gridMainPrincipal {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 22% 63%;
+    grid-template-rows: 17% 22% 61%;
     grid-template-areas: "titulo" "texto"      "imagen";
     column-gap: 10px; }
   .titulo {
@@ -534,4 +534,7 @@ a:hover {
     .carta .carta-body {
       height: 5rem; }
   .btn {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .card {
+    margin-left: 15%;
+    margin-right: 15%; } }

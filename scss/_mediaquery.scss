@@ -28,7 +28,7 @@
     .gridMainPrincipal{
        display: grid;
        grid-template-columns: 100%;
-       grid-template-rows: 15% 22% 63%;
+       grid-template-rows: 17% 22% 61%;
        grid-template-areas: "titulo"
                             "texto"     
                             "imagen";
@@ -166,4 +166,7 @@
    .btn{
        font-size: 8px;
    }
+
+   .card{margin-left: 15%; margin-right: 15%;}
+
 }
