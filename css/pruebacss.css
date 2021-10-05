@@ -27,9 +27,6 @@ a {
 #dropdownColor {
   background-color: #5197cc; }
 
-#dropItemColor {
-  color: #f2ccff; }
-
 /*ID navbar*/
 /*Seccion inicio*/
 #colorInicioP {
@@ -168,9 +165,8 @@ main {
   align-self: center;
   grid-area: titulo;
   margin-top: 25px; }
-
-.titulo:hover {
-  font-size: 50px; }
+  .titulo:hover {
+    font-size: 50px; }
 
 h3 {
   color: #a775b7;
@@ -189,13 +185,13 @@ h3 {
   grid-template-areas: "instag   title" "instag   carrou";
   column-gap: 20px;
   justify-items: center; }
-  .gridDos .gridDos__titulo {
+  .gridDos__titulo {
     grid-area: title; }
-  .gridDos .gridDos__carrousel {
+  .gridDos__carrousel {
     grid-area: carrou;
     height: auto;
     width: 250px; }
-  .gridDos .gridDos__iframe {
+  .gridDos__iframe {
     grid-area: instag; }
 
 h2 {
@@ -207,9 +203,8 @@ h2 {
   word-spacing: 10px;
   align-self: center;
   padding-top: 2rem; }
-
-h2:hover {
-  font-size: 50px; }
+  h2:hover {
+    font-size: 50px; }
 
 p {
   color: #540197;
@@ -232,28 +227,28 @@ p {
   grid-template-rows: 50% 50%;
   grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8";
   justify-items: center; }
-  .product .product__img--uno {
+  .product__img--uno {
     grid-area: img1;
     width: 60%; }
-  .product .product__img--dos {
+  .product__img--dos {
     grid-area: img2;
     width: 60%; }
-  .product .product__img--tres {
+  .product__img--tres {
     grid-area: img3;
     width: 60%; }
-  .product .product__img--cuatro {
+  .product__img--cuatro {
     grid-area: img4;
     width: 60%; }
-  .product .product__img--cinco {
+  .product__img--cinco {
     grid-area: img5;
     width: 80%; }
-  .product .product__img--seis {
+  .product__img--seis {
     grid-area: img6;
     width: 60%; }
-  .product .product__img--siete {
+  .product__img--siete {
     grid-area: img7;
     width: 80%; }
-  .product .product__img--ocho {
+  .product__img--ocho {
     grid-area: img8;
     width: 60%; }
 
@@ -263,16 +258,16 @@ p {
   grid-template-rows: 100%;
   grid-template-areas: "img1 img2 img3 img4";
   justify-items: center; }
-  .productdos .productdos__img--uno {
+  .productdos__img--uno {
     grid-area: img1;
     width: 80%; }
-  .productdos .productdos__img--dos {
+  .productdos__img--dos {
     grid-area: img2;
     width: 80%; }
-  .productdos .productdos__img--tres {
+  .productdos__img--tres {
     grid-area: img3;
     width: 80%; }
-  .productdos .productdos__img--cuatro {
+  .productdos__img--cuatro {
     grid-area: img4; }
 
 .producttres {
@@ -281,16 +276,16 @@ p {
   grid-template-rows: 100%;
   grid-template-areas: "img1 img2 img3 img4";
   justify-items: center; }
-  .producttres .producttres__img--uno {
+  .producttres__img--uno {
     grid-area: img1;
     width: 60%; }
-  .producttres .producttres__img--dos {
+  .producttres__img--dos {
     grid-area: img2;
     width: 60%; }
-  .producttres .producttres__img--tres {
+  .producttres__img--tres {
     grid-area: img3;
     width: 80%; }
-  .producttres .producttres__img--cuatro {
+  .producttres__img--cuatro {
     grid-area: img4;
     width: 60%; }
 
@@ -308,10 +303,9 @@ button, .botonE, .botonPersonalizado {
   border: none;
   border-radius: 10px;
   margin: 0 15px; }
-
-button:hover, .botonE:hover, .botonPersonalizado:hover {
-  background: #c068f6;
-  background: radial-gradient(circle, #629ee4 19%, #c068f6 100%); }
+  button:hover, .botonE:hover, .botonPersonalizado:hover {
+    background: #c068f6;
+    background: radial-gradient(circle, #629ee4 19%, #c068f6 100%); }
 
 .botonE {
   width: 150px; }
@@ -401,9 +395,8 @@ form {
 a {
   text-decoration: none;
   color: #f2ccff; }
-
-a:hover {
-  color: white; }
+  a:hover {
+    color: white; }
 
 .carta {
   margin-left: 0;
@@ -411,7 +404,7 @@ a:hover {
   border: 2% solid white;
   border-radius: 0%;
   width: 33.33333%; }
-  .carta .carta-header {
+  .carta-header {
     background-color: #2f70a1;
     border: none;
     text-transform: uppercase;
@@ -419,10 +412,10 @@ a:hover {
     color: #f2ccff;
     font-size: 1rem;
     height: 2rem; }
-  .carta .carta-body {
+  .carta-body {
     background-color: #5197cc;
     height: 8rem; }
-  .carta .carta-title {
+  .carta-title {
     font-size: 1rem; }
 
 .carta-header:hover {
@@ -526,7 +519,8 @@ a:hover {
   .carta {
     height: 80px; }
     .carta .carta-header {
-      font-size: 10px; }
+      font-size: 0.7rem;
+      padding-top: 0.5rem; }
     .carta .carta-body_img {
       height: 24px; }
     .carta .carta-title {

@@ -57,9 +57,10 @@ main{
     @include tituloH($colorTitulos , $tamanioTexto , $tipografiaUno );
     grid-area: titulo;
     margin-top: 25px;  
-}
-.titulo:hover{
-    font-size: $tamanioTexto + 2;
+
+    &:hover{
+        font-size: $tamanioTexto + 2;
+    }
 }
 
 
@@ -77,21 +78,19 @@ h3{
     column-gap: 20px;
     justify-items: center;
 
-    .gridDos__titulo{
+    &__titulo{
         grid-area: title;
     }
 
-    .gridDos__carrousel{
+    &__carrousel{
         grid-area: carrou;
         height: auto;
         width: 250px;
     }
 
-    .gridDos__iframe{
+    &__iframe{
         grid-area: instag;
     }
-
-    
 
 }
 
@@ -100,10 +99,12 @@ h3{
 h2{
     @include tituloH($colorTitulos , $tamanioTexto , $tipografiaUno );
     padding-top: 2rem;
+
+    &:hover{
+        font-size: $tamanioTexto + 2;
+    }
 }
-h2:hover{
-    font-size: $tamanioTexto + 2;
-}
+
 
 //Parrafos en general
 p {
@@ -134,14 +135,14 @@ p {
          justify-items: center;
     
 
-    .product__img--uno{grid-area:img1; width: 60%;}
-    .product__img--dos{grid-area:img2; width: 60%;}
-    .product__img--tres{grid-area:img3; width: 60%;}
-    .product__img--cuatro{grid-area:img4; width: 60%;}
-    .product__img--cinco{grid-area:img5; width: 80%}
-    .product__img--seis{grid-area:img6; width: 60%;}
-    .product__img--siete{grid-area:img7; width: 80%}
-    .product__img--ocho{grid-area:img8; width: 60%;}
+    &__img--uno{grid-area:img1; width: 60%;}
+    &__img--dos{grid-area:img2; width: 60%;}
+    &__img--tres{grid-area:img3; width: 60%;}
+    &__img--cuatro{grid-area:img4; width: 60%;}
+    &__img--cinco{grid-area:img5; width: 80%}
+    &__img--seis{grid-area:img6; width: 60%;}
+    &__img--siete{grid-area:img7; width: 80%}
+    &__img--ocho{grid-area:img8; width: 60%;}
 }
 
 .productdos{
@@ -151,10 +152,10 @@ p {
         grid-template-areas: "img1 img2 img3 img4";
         justify-items: center;
 
-    .productdos__img--uno{grid-area:img1; width: 80%}
-    .productdos__img--dos{grid-area:img2; width: 80%}
-    .productdos__img--tres{grid-area:img3; width: 80%}
-    .productdos__img--cuatro{grid-area:img4;}
+    &__img--uno{grid-area:img1; width: 80%}
+    &__img--dos{grid-area:img2; width: 80%}
+    &__img--tres{grid-area:img3; width: 80%}
+    &__img--cuatro{grid-area:img4;}
 }
 
 .producttres{
@@ -164,10 +165,10 @@ p {
         grid-template-areas: "img1 img2 img3 img4";
         justify-items: center;
     
-    .producttres__img--uno{grid-area:img1; width: 60%}
-    .producttres__img--dos{grid-area:img2; width: 60%}
-    .producttres__img--tres{grid-area:img3; width: 80%}
-    .producttres__img--cuatro{grid-area:img4; width: 60%}
+    &__img--uno{grid-area:img1; width: 60%}
+    &__img--dos{grid-area:img2; width: 60%}
+    &__img--tres{grid-area:img3; width: 80%}
+    &__img--cuatro{grid-area:img4; width: 60%}
     
 }
 
@@ -186,11 +187,13 @@ button{
     border: none;
     border-radius: 10px;
     margin: 0 15px;
+
+    &:hover{
+        background: rgb(192,104,246);
+        background: radial-gradient(circle, rgba(98,158,228,1) 19%, rgba(192,104,246,1) 100%);
+    }
 }
-button:hover{
-    background: rgb(192,104,246);
-    background: radial-gradient(circle, rgba(98,158,228,1) 19%, rgba(192,104,246,1) 100%);
-}
+
 
 .botonE{
     @extend button;
@@ -302,10 +305,12 @@ form{
 a{
     text-decoration: none;
     color: $colorFondo;
+
+    &:hover{
+        color: white;
+    }
 }
-a:hover{
-    color: white;
-}
+
 .carta{
     margin-left: 0;
     margin-right: 0;
@@ -313,7 +318,7 @@ a:hover{
     border-radius: 0%;
     width: 33.33333%;
     
-    .carta-header{
+    &-header{
         background-color: darken($colorEncab, 15%);
         border: none;
         text-transform: uppercase;
@@ -323,15 +328,16 @@ a:hover{
         height: 2rem;
     }
 
-    .carta-body{
+    &-body{
         background-color: $colorEncab;
         height: 8rem;
     }
     
-    .carta-title{
+    &-title{
         font-size: 1rem;
     }
 }
+
 .carta-header:hover{
     color: white;
 }

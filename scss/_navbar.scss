@@ -25,9 +25,7 @@ a{
 #dropdownColor{
     background-color: $colorEncab;
 }
-#dropItemColor{
-    color: $colorTextoNav;
-}
+
 
 
 
@@ -41,7 +39,7 @@ a{
 
 /*Seccion productos*/
 #colorInicioPr{color: $colorTextoNav;}
-#colorProdPr{color: $colorTextoNav;}
+#colorProdPr{color: $colorTextoNav;} 
 #colorInfoPr{color: $colorTextoNav;}
 #colorNosotPr{color: $colorTextoNav;}
 #colorContPr{color: $colorTextoNav;}
