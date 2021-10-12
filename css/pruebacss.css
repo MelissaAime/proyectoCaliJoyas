@@ -226,68 +226,88 @@ p {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8";
-  justify-items: center; }
+  justify-items: center;
+  padding-right: 2rem; }
   .product__img--uno {
     grid-area: img1;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--dos {
     grid-area: img2;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--tres {
     grid-area: img3;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--cuatro {
     grid-area: img4;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--cinco {
     grid-area: img5;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--seis {
     grid-area: img6;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--siete {
     grid-area: img7;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .product__img--ocho {
     grid-area: img8;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
 
 .productdos {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100%;
   grid-template-areas: "img1 img2 img3 img4";
-  justify-items: center; }
+  justify-items: center;
+  padding-right: 2rem; }
   .productdos__img--uno {
     grid-area: img1;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .productdos__img--dos {
     grid-area: img2;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .productdos__img--tres {
     grid-area: img3;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .productdos__img--cuatro {
-    grid-area: img4; }
+    grid-area: img4;
+    width: 90%;
+    margin: 0.5rem; }
 
 .producttres {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100%;
   grid-template-areas: "img1 img2 img3 img4";
-  justify-items: center; }
+  justify-items: center;
+  padding-right: 2rem; }
   .producttres__img--uno {
     grid-area: img1;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .producttres__img--dos {
     grid-area: img2;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
   .producttres__img--tres {
     grid-area: img3;
-    width: 80%; }
+    width: 90%;
+    margin: 0.5rem; }
   .producttres__img--cuatro {
     grid-area: img4;
-    width: 60%; }
+    width: 90%;
+    margin: 0.5rem; }
 
 .navbar-toggler {
   height: auto; }
@@ -315,7 +335,8 @@ button, .botonE, .botonPersonalizado {
   font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 5px;
-  font-weight: bold; }
+  font-weight: bold;
+  list-style-type: none; }
 
 #divProd {
   text-align: center;
@@ -325,12 +346,18 @@ button, .botonE, .botonPersonalizado {
   padding-bottom: 70px;
   margin-bottom: 0px; }
 
+.listaProductos {
+  list-style-type: none; }
+
 .card {
   margin-left: 6%;
   margin-right: 6%; }
 
 .row {
   padding-bottom: 3rem; }
+
+.accordion-button {
+  margin: 0; }
 
 .fieldsetContacto {
   border: 4px solid white;
